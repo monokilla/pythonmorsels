@@ -1,22 +1,19 @@
 import math
 
 class Cirlce:
-    def __init__(self,r=1):
-        self.r = r
+    def __init__(self,radius=1):
+        self.radius = radius
     
     def __repr__(self):
-        return f"Circle({self.r})"
-
-    
-    def radius(self):
-        return self.r
-
+        return f"Circle({self.radius})"
     @property
     def diameter(self):
-        return self.r * 2
+        return self.radius * 2
     @property    
     def area(self):
-        return (self.r**2)*math.pi
+        return (self.radius**2)*math.pi
+
+    
     
     
 
@@ -25,6 +22,7 @@ class Cirlce:
 
 c = Cirlce(4)
 c.radius=1
+
 print(c.area)
 print(c.diameter)
 print(c)
